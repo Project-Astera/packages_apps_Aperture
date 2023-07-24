@@ -12,6 +12,15 @@ plugins {
     id("kotlin-android")
 }
 
+fun getCommitHash(): String {
+    val stdout = org.apache.commons.io.output.ByteArrayOutputStream()
+    project.exec {
+        commandLine = "git rev-parse --short HEAD".split(" ")
+        standardOutput = stdout
+    }
+    return String(stdout.toByteArray()).trim()
+}
+
 android {
     compileSdk = 33
 
@@ -20,7 +29,7 @@ android {
         minSdk = 26
         targetSdk = 33
         versionCode = 1
-        versionName = "1.0"
+        versionName = getCommitHash()
     }
 
     buildTypes {
