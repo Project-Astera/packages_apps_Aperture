@@ -18,6 +18,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AsteraCamera"
+rootProject.name = "Flash"
 include(":app")
 include(":lens_launcher")
