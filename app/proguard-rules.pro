@@ -24,4 +24,4 @@
 #-renamesourcefileattribute SourceFile
 
 # Any class extending SettingsFragment can be referenced in XML.
--keep class ** extends org.lineageos.aperture.SettingsActivity$SettingsFragment
+-keep class ** extends com.astera.flash.SettingsActivity$SettingsFragment
