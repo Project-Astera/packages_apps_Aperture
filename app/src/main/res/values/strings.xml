@@ -9,7 +9,6 @@
     <string name="video_camera_label">Camcorder</string>
 
     <!-- Content descriptions -->
-    <string name="camera_mode_highlight_description">Camera mode highlight</string>
     <string name="cancel_button_description">Cancel</string>
     <string name="confirm_button_description">Confirm</string>
     <string name="flash_button_description">Flash mode</string>
@@ -17,11 +16,8 @@
     <string name="gallery_button_description">Gallery</string>
     <string name="google_lens_button_description">Open Google Lens</string>
     <string name="image_view_description">Image preview</string>
-    <string name="photo_mode_button_description">Switch to photo mode</string>
     <string name="pro_button_description">Pro settings</string>
-    <string name="qr_mode_button_description">Switch to QR scanner mode</string>
     <string name="shutter_button_description">Shutter</string>
-    <string name="video_mode_button_description">Switch to video mode</string>
     <string name="video_recording_state_button_description">Pause/resume video recording</string>
 
     <!-- Secondary button text -->
@@ -56,11 +52,6 @@
     <string name="mic_on">MIC ON</string>
 
     <string name="settings">SETTINGS</string>
-
-    <!-- Selector chip -->
-    <string name="selector_photo">PHOTO</string>
-    <string name="select_video">VIDEO</string>
-    <string name="select_scan">SCAN</string>
 
     <!-- Toast messages -->
     <string name="app_permissions_toast">Permissions not granted by the user.</string>
@@ -108,6 +99,7 @@
     <!-- Video Preferences -->
     <string name="video_stabilization_title">Enable video stabilization</string>
     <string name="video_stabilization_summary">When available, enable video stabilization to reduce camera vibrations during recording</string>
+    <string name="video_mirror_mode_title">Enable video mirroring</string>
 
     <!-- Advanced Preferences -->
     <string name="processing_title">Processing</string>
@@ -173,6 +165,7 @@
     <string name="error_do_not_disturb_mode_enabled">Do Not Disturb mode is enabled. Disable it and reopen the app.</string>
     <string name="error_unknown_recoverable">A recoverable unknown error has been found. Please report this to the developers.</string>
     <string name="error_unknown_critical">A critical unknown error has been found. Please report this to the developers.</string>
+    <string name="error_no_cameras_available">No cameras were found on the device, cannot start the app.</string>
 
     <!-- Gesture actions -->
     <string name="gesture_action_shutter">Shutter</string>
@@ -189,4 +182,22 @@
 
     <!-- Force torch help -->
     <string name="force_torch_help">On photo mode, you can long press the flash button to switch into torch mode.</string>
+
+    <!-- Camera modes -->
+    <string name="camera_mode_photo">Photo</string>
+    <string name="camera_mode_video">Video</string>
+    <string name="camera_mode_qr">Scan</string>
+
+    <!-- Video dynamic ranges -->
+    <string name="video_dynamic_range_sdr" translatable="false">SDR</string>
+    <string name="video_dynamic_range_hlg_10_bit" translatable="false">HLG (10 bit)</string>
+    <string name="video_dynamic_range_hdr10_10_bit" translatable="false">HDR10 (10 bit)</string>
+    <string name="video_dynamic_range_hdr10_plus_10_bit" translatable="false">HDR10+ (10 bit)</string>
+    <string name="video_dynamic_range_dolby_vision_10_bit" translatable="false">Dolby Vision (10 bit)</string>
+    <string name="video_dynamic_range_dolby_vision_8_bit" translatable="false">Dolby Vision (8 bit)</string>
+
+    <!-- Video mirror mode -->
+    <string name="video_mirror_mode_off">Off</string>
+    <string name="video_mirror_mode_on">On</string>
+    <string name="video_mirror_mode_on_ffc_only">Front facing camera only</string>
 </resources>

@@ -6,7 +6,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Càmera</string>
     <string name="video_camera_label">Càmera de vídeo</string>
-    <string name="camera_mode_highlight_description">Ressalta el mode de càmera</string>
     <string name="cancel_button_description">Cancel·la</string>
     <string name="confirm_button_description">Confirma</string>
     <string name="flash_button_description">Mode de flaix</string>
@@ -14,11 +13,8 @@
     <string name="gallery_button_description">Galeria</string>
     <string name="google_lens_button_description">Obre el Google Lens</string>
     <string name="image_view_description">Vista prèvia de la imatge</string>
-    <string name="photo_mode_button_description">Canvia al mode foto</string>
     <string name="pro_button_description">Configuració pro</string>
-    <string name="qr_mode_button_description">Canvia al mode d\'escàner QR</string>
     <string name="shutter_button_description">Obturador</string>
-    <string name="video_mode_button_description">Canvia al mode vídeo</string>
     <string name="video_recording_state_button_description">Pausa/reprèn la gravació de vídeo</string>
     <string name="timer_off">TEMPORITZADOR DESACTIVAT</string>
     <string name="timer_3">TEMPORITZADOR 3s</string>
@@ -36,9 +32,6 @@
     <string name="mic_off">MICRÒFON DESACTIVAT</string>
     <string name="mic_on">MICRÒFON ACTIVAT</string>
     <string name="settings">CONFIGURACIÓ</string>
-    <string name="selector_photo">FOTO</string>
-    <string name="select_video">VÍDEO</string>
-    <string name="select_scan">ESCANEJA</string>
     <string name="app_permissions_toast">Permisos no concedits per l\'usuari.</string>
     <string name="camcorder_unsupported_toast">Cap càmera admet la gravació de vídeo.</string>
     <string name="qr_copy_description">Copia al porta-retalls</string>
@@ -71,6 +64,7 @@
     <string name="photo_ffc_mirror_summary">Desa les fotos de la càmera frontal tal com apareixen a la vista prèvia</string>
     <string name="video_stabilization_title">Activa l\'estabilització de vídeo</string>
     <string name="video_stabilization_summary">Quan estigui disponible, activeu l\'estabilització de vídeo per reduir les vibracions de la càmera durant la gravació</string>
+    <string name="video_mirror_mode_title">Activa el mirall de la càmera</string>
     <string name="processing_title">Processant</string>
     <string name="processing_info">En mode foto, quan s\'utilitza el mode ZSL, només es tindran en compte els valors per defecte i desactivats. Per al mode de vídeo, només es tindran en compte els valors per defecte, desactivats i ràpids.</string>
     <string name="edge_mode_title">Nitidesa</string>
@@ -126,6 +120,7 @@
     <string name="error_do_not_disturb_mode_enabled">El mode No Molestis està activat. Desactiveu-lo i torneu a obrir l\'aplicació.</string>
     <string name="error_unknown_recoverable">S\'ha trobat un error desconegut recuperable. Informeu als desenvolupadors.</string>
     <string name="error_unknown_critical">S\'ha trobat un error crític desconegut. Informeu als desenvolupadors.</string>
+    <string name="error_no_cameras_available">No s\'han trobat càmeres al dispositiu, no es pot iniciar l\'aplicació.</string>
     <string name="gesture_action_shutter">Obturador</string>
     <string name="gesture_action_zoom">Amplia</string>
     <string name="gesture_action_volume">Volum</string>
@@ -136,4 +131,10 @@
     <string name="thermal_status_emergency">L\'acceleració tèrmica està en estat d\'emergència, l\'aplicació es tancarà ara.</string>
     <string name="thermal_status_shutdown">Apagada deguda a l\'acceleració tèrmica, el dispositiu s\'apagarà.</string>
     <string name="force_torch_help">En mode foto, podeu prémer prolongadament el botó del flaix per activar el flaix.</string>
+    <string name="camera_mode_photo">Foto</string>
+    <string name="camera_mode_video">Vídeo</string>
+    <string name="camera_mode_qr">Escaneja</string>
+    <string name="video_mirror_mode_off">Desactivat</string>
+    <string name="video_mirror_mode_on">Activat</string>
+    <string name="video_mirror_mode_on_ffc_only">Només la càmera frontal</string>
 </resources>

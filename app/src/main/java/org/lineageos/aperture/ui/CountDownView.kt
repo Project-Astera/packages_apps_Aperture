@@ -18,11 +18,12 @@ import android.widget.TextView
 import androidx.annotation.IntRange
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
+import androidx.lifecycle.Observer
 import androidx.lifecycle.findViewTreeLifecycleOwner
 import org.lineageos.aperture.R
 import org.lineageos.aperture.camera.CameraViewModel
 import org.lineageos.aperture.ext.*
-import org.lineageos.aperture.utils.Rotation
+import org.lineageos.aperture.models.Rotation
 
 /**
  * This class manages the looks of the countdown.
@@ -51,6 +52,10 @@ class CountDownView(context: Context, attrs: AttributeSet?) : FrameLayout(
         }
     }
 
+    private val screenRotationObserver = Observer { screenRotation: Rotation ->
+        updateViewsRotation(screenRotation)
+    }
+
     /**
      * Returns whether countdown is on-going.
      */
@@ -59,20 +64,14 @@ class CountDownView(context: Context, attrs: AttributeSet?) : FrameLayout(
 
     internal var cameraViewModel: CameraViewModel? = null
         set(value) {
-            val lifecycleOwner = findViewTreeLifecycleOwner() ?: return
-
             // Unregister
-            field?.screenRotation?.removeObservers(lifecycleOwner)
+            field?.screenRotation?.removeObserver(screenRotationObserver)
 
             field = value
 
-            value?.let { cameraViewModel ->
-                cameraViewModel.screenRotation.observe(lifecycleOwner) {
-                    val screenRotation = it ?: return@observe
+            val lifecycleOwner = findViewTreeLifecycleOwner() ?: return
 
-                    updateViewsRotation(screenRotation)
-                }
-            }
+            value?.screenRotation?.observe(lifecycleOwner, screenRotationObserver)
         }
 
     init {
