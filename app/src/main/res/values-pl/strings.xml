@@ -6,7 +6,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Aparat</string>
     <string name="video_camera_label">Kamera</string>
-    <string name="camera_mode_highlight_description">Podświetlenie trybu aparatu</string>
     <string name="cancel_button_description">Anuluj</string>
     <string name="confirm_button_description">Potwierdź</string>
     <string name="flash_button_description">Tryb błysku</string>
@@ -14,11 +13,8 @@
     <string name="gallery_button_description">Galeria</string>
     <string name="google_lens_button_description">Otwórz Obiektyw Google</string>
     <string name="image_view_description">Podgląd obrazu</string>
-    <string name="photo_mode_button_description">Przełącz na tryb zdjęć</string>
     <string name="pro_button_description">Zaawansowane</string>
-    <string name="qr_mode_button_description">Przełącz na tryb skanera kodów QR</string>
     <string name="shutter_button_description">Migawka</string>
-    <string name="video_mode_button_description">Przełącz na tryb wideo</string>
     <string name="video_recording_state_button_description">Wstrzymaj/wznawiaj nagrywanie wideo</string>
     <string name="timer_off">TIMER WYŁ.</string>
     <string name="timer_3">TIMER 3s</string>
@@ -36,9 +32,6 @@
     <string name="mic_off">MIK WYŁ.</string>
     <string name="mic_on">MIK WŁ.</string>
     <string name="settings">USTAWIENIA</string>
-    <string name="selector_photo">ZDJĘCIE</string>
-    <string name="select_video">WIDEO</string>
-    <string name="select_scan">SKANER</string>
     <string name="app_permissions_toast">Uprawnienia nie zostały przyznane przez użytkownika.</string>
     <string name="camcorder_unsupported_toast">Żaden aparat nie obsługuje nagrywania wideo.</string>
     <string name="qr_copy_description">Skopiuj do schowka</string>
@@ -71,6 +64,7 @@
     <string name="photo_ffc_mirror_summary">Zapisywanie zdjęć z przedniego aparatu tak, jak są widoczne na podglądzie</string>
     <string name="video_stabilization_title">Włącz stabilizację wideo</string>
     <string name="video_stabilization_summary">Jeżeli możliwe, włącz stabilizację wideo, aby zredukować drgania kamery podczas nagrywania</string>
+    <string name="video_mirror_mode_title">Włącz lustrzane odbicie wideo</string>
     <string name="processing_title">Przetwarzanie</string>
     <string name="processing_info">W trybie zdjęcia, gdy używany jest tryb ZSL, brane są pod uwagę tylko wartości domyślne i wyłączone. W trybie wideo brane są pod uwagę tylko wartości domyślne, wyłączone i szybkie.</string>
     <string name="edge_mode_title">Wyostrzanie</string>
@@ -126,6 +120,7 @@
     <string name="error_do_not_disturb_mode_enabled">Tryb \"Nie przeszkadzać\" jest włączony. Wyłącz go i otwórz aplikację ponownie.</string>
     <string name="error_unknown_recoverable">Znaleziono nieznany błąd do odzyskania. Prosimy zgłosić go programistom.</string>
     <string name="error_unknown_critical">Znaleziono krytyczny, nieznany błąd. Prosimy zgłosić go programistom.</string>
+    <string name="error_no_cameras_available">Nie znaleziono żadnego aparatu w urządzeniu, dlatego nie można uruchomić aplikacji.</string>
     <string name="gesture_action_shutter">Migawka</string>
     <string name="gesture_action_zoom">Powiększenie</string>
     <string name="gesture_action_volume">Głośność</string>
@@ -136,4 +131,10 @@
     <string name="thermal_status_emergency">Awaryjne dławienie termiczne, aplikacja zostanie teraz zamknięta.</string>
     <string name="thermal_status_shutdown">Wyłączenie dławienia termicznego, urządzenie się wyłączy.</string>
     <string name="force_torch_help">W trybie fotografowania można włączyć latarkę, przytrzymując przycisk lampy błyskowej.</string>
+    <string name="camera_mode_photo">Zdjęcie</string>
+    <string name="camera_mode_video">Wideo</string>
+    <string name="camera_mode_qr">Skaner</string>
+    <string name="video_mirror_mode_off">Wyłączono</string>
+    <string name="video_mirror_mode_on">Włączono</string>
+    <string name="video_mirror_mode_on_ffc_only">Tylko przedni aparat</string>
 </resources>
